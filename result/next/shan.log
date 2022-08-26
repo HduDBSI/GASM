@@ -1,0 +1,2306 @@
+2022-07-08_20-03-32
+Namespace(batchSize=128, cuda_device='0', data_size=1, drop_portion=1, hist_length=5, itera=200, output='display', valid_portion=8)
+WARNING:tensorflow:From shan_batch.py:688: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+lastfm
+============================================
++++++++++++++ start top_n_item is: 50 ++++++++++++++++
++++++++++++++ start top_n_item is: 50 ++++++++++++++++
+init model ... 
+init data_generation
+gen_train_data
+------------------------------
+Train records:1006775
+train_data_num1006775
+gen_test_old_data
+------------------------------
+Test records (next-item):248402
+test_old_data_num248402
+gen_test_new_data
+------------------------------
+Test records (next-new):107182
+test_new_data_num107182
+WARNING:tensorflow:From shan_batch.py:392: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From shan_batch.py:408: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+building model ... 
+WARNING:tensorflow:From shan_batch.py:445: calling softmax (from tensorflow.python.ops.nn_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+dim is deprecated, use axis instead
+WARNING:tensorflow:From shan_batch.py:527: The name tf.log is deprecated. Please use tf.math.log instead.
+
+running ... 
+iteration 0 begin ...
+2022-07-08 20:20:20.717098: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+loss = 6247.115929067135
+
+iteration 1 begin ...
+loss = 5620.657321751118
+
+iteration 2 begin ...
+loss = 5490.486332774162
+
+iteration 3 begin ...
+loss = 5463.132537007332
+
+iteration 4 begin ...
+loss = 5456.975881993771
+
+iteration 5 begin ...
+loss = 5455.047072052956
+
+iteration 6 begin ...
+loss = 5453.802105128765
+
+iteration 7 begin ...
+loss = 5452.545614242554
+
+iteration 8 begin ...
+loss = 5451.1837576031685
+
+iteration 9 begin ...
+loss = 5449.843872785568
+
+iteration 10 begin ...
+loss = 5448.579974353313
+
+iteration 11 begin ...
+loss = 5447.44300532341
+
+iteration 12 begin ...
+loss = 5446.450110197067
+
+iteration 13 begin ...
+loss = 5445.5052500367165
+
+iteration 14 begin ...
+loss = 5444.613068521023
+
+iteration 15 begin ...
+loss = 5443.739756286144
+
+iteration 16 begin ...
+loss = 5442.8857380747795
+
+iteration 17 begin ...
+loss = 5441.977355897427
+
+iteration 18 begin ...
+loss = 5441.054570496082
+
+iteration 19 begin ...
+loss = 5440.114258825779
+
+iteration 20 begin ...
+loss = 5439.083157658577
+
+iteration 21 begin ...
+loss = 5438.100708425045
+
+iteration 22 begin ...
+loss = 5436.997155070305
+
+iteration 23 begin ...
+loss = 5435.913760066032
+
+iteration 24 begin ...
+loss = 5434.771927595139
+
+iteration 25 begin ...
+loss = 5433.645853996277
+
+iteration 26 begin ...
+loss = 5432.522405743599
+
+iteration 27 begin ...
+loss = 5431.323298573494
+
+iteration 28 begin ...
+loss = 5430.090945184231
+
+iteration 29 begin ...
+loss = 5428.895178794861
+
+iteration 30 begin ...
+loss = 5427.621829628944
+
+iteration 31 begin ...
+loss = 5426.22991001606
+
+iteration 32 begin ...
+loss = 5424.854334056377
+
+iteration 33 begin ...
+loss = 5423.423584342003
+
+iteration 34 begin ...
+loss = 5421.861367881298
+
+iteration 35 begin ...
+loss = 5420.263598501682
+
+iteration 36 begin ...
+loss = 5418.557339847088
+
+iteration 37 begin ...
+loss = 5416.771273434162
+
+iteration 38 begin ...
+loss = 5414.930317759514
+
+iteration 39 begin ...
+loss = 5413.008635997772
+
+iteration 40 begin ...
+loss = 5411.0193811059
+
+iteration 41 begin ...
+loss = 5408.9376675486565
+
+iteration 42 begin ...
+loss = 5406.865939319134
+
+iteration 43 begin ...
+loss = 5404.582036674023
+
+iteration 44 begin ...
+loss = 5402.379361629486
+
+iteration 45 begin ...
+loss = 5400.22510010004
+
+iteration 46 begin ...
+loss = 5397.790955424309
+
+iteration 47 begin ...
+loss = 5395.466048777103
+
+iteration 48 begin ...
+loss = 5393.073287367821
+
+iteration 49 begin ...
+loss = 5390.66342574358
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 49 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.00593283 0.01053742 0.01463083 0.01990356 0.02400905 0.02811454
+ 0.03144722 0.03490469 0.03847083 0.04192829 0.04490678 0.04762767
+ 0.05028416 0.05297688 0.05527917 0.05744462 0.05956176 0.06195663
+ 0.06408584 0.06627946 0.06838856 0.0704735  0.07258662 0.07510223
+ 0.07738843 0.07985172 0.08208156 0.08405381 0.08635207 0.08867852]
+MRR_all_avg_next:
+ [0.00593283 0.00823512 0.00959959 0.01091778 0.01173887 0.01242312
+ 0.01289922 0.0133314  0.01372764 0.01407339 0.01434416 0.0145709
+ 0.01477525 0.01496758 0.01512107 0.01525641 0.01538095 0.015514
+ 0.01562606 0.01573574 0.01583617 0.01593094 0.01602282 0.01612764
+ 0.01621908 0.01631383 0.01639641 0.01646685 0.0165461  0.01662365]
+record_num:
+ 248448.0
+=========== testing next new item epoch: 49 ===========
+recall_all_avg_next_new:
+ [0.00109077 0.00247986 0.00363589 0.00513686 0.00634882 0.00750485
+ 0.00868884 0.0099381  0.01116871 0.01248322 0.01359263 0.01467408
+ 0.01584875 0.01678103 0.01772263 0.01872017 0.01982026 0.02109748
+ 0.02207637 0.02305527 0.02402484 0.02495712 0.02584278 0.02670048
+ 0.02766072 0.02868623 0.02981429 0.03072792 0.03169749 0.03275097]
+MRR_all_avg_next_new:
+ [0.00109077 0.00178531 0.00217066 0.0025459  0.00278829 0.00298096
+ 0.0031501  0.00330626 0.003443   0.00357445 0.0036753  0.00376542
+ 0.00385578 0.00392237 0.00398515 0.00404749 0.0041122  0.00418316
+ 0.00423468 0.00428363 0.0043298  0.00437217 0.00441068 0.00444642
+ 0.00448483 0.00452427 0.00456605 0.00459868 0.00463211 0.00466723]
+record_num_new:
+ 107264.0
+iteration 50 begin ...
+loss = 5388.149245560169
+
+iteration 51 begin ...
+loss = 5385.740797221661
+
+iteration 52 begin ...
+loss = 5383.181798577309
+
+iteration 53 begin ...
+loss = 5380.506116092205
+
+iteration 54 begin ...
+loss = 5377.985831260681
+
+iteration 55 begin ...
+loss = 5375.170572042465
+
+iteration 56 begin ...
+loss = 5372.572426915169
+
+iteration 57 begin ...
+loss = 5369.740283846855
+
+iteration 58 begin ...
+loss = 5366.856166243553
+
+iteration 59 begin ...
+loss = 5363.929576635361
+
+iteration 60 begin ...
+loss = 5361.00355309248
+
+iteration 61 begin ...
+loss = 5357.7585272192955
+
+iteration 62 begin ...
+loss = 5354.756844520569
+
+iteration 63 begin ...
+loss = 5351.423784136772
+
+iteration 64 begin ...
+loss = 5348.061492562294
+
+iteration 65 begin ...
+loss = 5344.815647304058
+
+iteration 66 begin ...
+loss = 5341.199891090393
+
+iteration 67 begin ...
+loss = 5337.402239203453
+
+iteration 68 begin ...
+loss = 5333.95248901844
+
+iteration 69 begin ...
+loss = 5329.818077683449
+
+iteration 70 begin ...
+loss = 5326.091519117355
+
+iteration 71 begin ...
+loss = 5321.899051308632
+
+iteration 72 begin ...
+loss = 5317.751970946789
+
+iteration 73 begin ...
+loss = 5313.584011375904
+
+iteration 74 begin ...
+loss = 5308.801076233387
+
+iteration 75 begin ...
+loss = 5304.525660991669
+
+iteration 76 begin ...
+loss = 5299.817203044891
+
+iteration 77 begin ...
+loss = 5294.819350659847
+
+iteration 78 begin ...
+loss = 5290.009263038635
+
+iteration 79 begin ...
+loss = 5284.88495016098
+
+iteration 80 begin ...
+loss = 5279.570762932301
+
+iteration 81 begin ...
+loss = 5274.375828623772
+
+iteration 82 begin ...
+loss = 5268.8726279735565
+
+iteration 83 begin ...
+loss = 5263.121517777443
+
+iteration 84 begin ...
+loss = 5257.2457302212715
+
+iteration 85 begin ...
+loss = 5251.428384482861
+
+iteration 86 begin ...
+loss = 5245.186672151089
+
+iteration 87 begin ...
+loss = 5238.8845383524895
+
+iteration 88 begin ...
+loss = 5232.60327732563
+
+iteration 89 begin ...
+loss = 5226.277304112911
+
+iteration 90 begin ...
+loss = 5219.313916683197
+
+iteration 91 begin ...
+loss = 5212.345958411694
+
+iteration 92 begin ...
+loss = 5205.559785544872
+
+iteration 93 begin ...
+loss = 5198.125957608223
+
+iteration 94 begin ...
+loss = 5190.919822990894
+
+iteration 95 begin ...
+loss = 5183.249012708664
+
+iteration 96 begin ...
+loss = 5175.828201413155
+
+iteration 97 begin ...
+loss = 5167.974527537823
+
+iteration 98 begin ...
+loss = 5159.9426881074905
+
+iteration 99 begin ...
+loss = 5151.96644282341
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 99 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.0068465  0.01166844 0.01523458 0.01820502 0.02104263 0.02380377
+ 0.02671786 0.02945888 0.03165652 0.03410372 0.03572176 0.03714661
+ 0.03859963 0.04031427 0.04161837 0.04322434 0.04427486 0.04543405
+ 0.04644835 0.0478571  0.04905252 0.05023184 0.05138299 0.05286821
+ 0.05375773 0.05463115 0.05562532 0.05674427 0.05756134 0.05832206]
+MRR_all_avg_next:
+ [0.0068465  0.00925747 0.01044618 0.01118879 0.01175632 0.01221651
+ 0.01263281 0.01297543 0.01321961 0.01346433 0.01361143 0.01373017
+ 0.01384194 0.01396441 0.01405135 0.01415172 0.01421352 0.01427792
+ 0.0143313  0.01440174 0.01445867 0.01451227 0.01456232 0.01462421
+ 0.01465979 0.01469338 0.0147302  0.01477016 0.01479834 0.0148237 ]
+record_num:
+ 248448.0
+=========== testing next new item epoch: 99 ===========
+recall_all_avg_next_new:
+ [0.0015942  0.00342146 0.00488514 0.00630221 0.00758875 0.00894988
+ 0.01017117 0.01172807 0.01284681 0.01383502 0.0146834  0.01553177
+ 0.01637082 0.0172192  0.01800231 0.01883204 0.01945667 0.01996942
+ 0.02044488 0.02093899 0.02147971 0.02202976 0.02256116 0.02296204
+ 0.02338156 0.02374515 0.02421129 0.02461217 0.02506899 0.02558174]
+MRR_all_avg_next_new:
+ [0.0015942  0.00250783 0.00299572 0.00334999 0.0036073  0.00383415
+ 0.00400862 0.00420324 0.00432754 0.00442636 0.00450349 0.00457418
+ 0.00463873 0.00469933 0.00475153 0.00480339 0.00484013 0.00486862
+ 0.00489364 0.00491835 0.0049441  0.0049691  0.0049922  0.00500891
+ 0.00502569 0.00503967 0.00505694 0.00507125 0.00508701 0.0051041 ]
+record_num_new:
+ 107264.0
+iteration 100 begin ...
+loss = 5143.71878182888
+
+iteration 101 begin ...
+loss = 5134.996388614178
+
+iteration 102 begin ...
+loss = 5126.6099544763565
+
+iteration 103 begin ...
+loss = 5117.628101468086
+
+iteration 104 begin ...
+loss = 5109.075020670891
+
+iteration 105 begin ...
+loss = 5099.8842713832855
+
+iteration 106 begin ...
+loss = 5090.541034936905
+
+iteration 107 begin ...
+loss = 5081.443242192268
+
+iteration 108 begin ...
+loss = 5071.9649195075035
+
+iteration 109 begin ...
+loss = 5062.215375959873
+
+iteration 110 begin ...
+loss = 5052.546735167503
+
+iteration 111 begin ...
+loss = 5042.636453747749
+
+iteration 112 begin ...
+loss = 5032.918157696724
+
+iteration 113 begin ...
+loss = 5022.374574244022
+
+iteration 114 begin ...
+loss = 5012.43175804615
+
+iteration 115 begin ...
+loss = 5001.466241776943
+
+iteration 116 begin ...
+loss = 4991.623219847679
+
+iteration 117 begin ...
+loss = 4980.555416941643
+
+iteration 118 begin ...
+loss = 4969.611600697041
+
+iteration 119 begin ...
+loss = 4958.941068947315
+
+iteration 120 begin ...
+loss = 4947.859869122505
+
+iteration 121 begin ...
+loss = 4936.717152297497
+
+iteration 122 begin ...
+loss = 4925.579662978649
+
+iteration 123 begin ...
+loss = 4914.016220033169
+
+iteration 124 begin ...
+loss = 4902.454280734062
+
+iteration 125 begin ...
+loss = 4891.183017075062
+
+iteration 126 begin ...
+loss = 4878.256120502949
+
+iteration 127 begin ...
+loss = 4866.437306821346
+
+iteration 128 begin ...
+loss = 4853.467575311661
+
+iteration 129 begin ...
+loss = 4839.491188466549
+
+iteration 130 begin ...
+loss = 4824.4868178367615
+
+iteration 131 begin ...
+loss = 4807.557168662548
+
+iteration 132 begin ...
+loss = 4787.522301852703
+
+iteration 133 begin ...
+loss = 4765.587535023689
+
+iteration 134 begin ...
+loss = 4741.189601838589
+
+iteration 135 begin ...
+loss = 4715.962291538715
+
+iteration 136 begin ...
+loss = 4690.304416000843
+
+iteration 137 begin ...
+loss = 4665.154804110527
+
+iteration 138 begin ...
+loss = 4639.133777558804
+
+iteration 139 begin ...
+loss = 4613.848117530346
+
+iteration 140 begin ...
+loss = 4587.840816140175
+
+iteration 141 begin ...
+loss = 4562.407097637653
+
+iteration 142 begin ...
+loss = 4537.86848449707
+
+iteration 143 begin ...
+loss = 4513.143640756607
+
+iteration 144 begin ...
+loss = 4489.5114488601685
+
+iteration 145 begin ...
+loss = 4466.756066441536
+
+iteration 146 begin ...
+loss = 4444.423824042082
+
+iteration 147 begin ...
+loss = 4422.936734825373
+
+iteration 148 begin ...
+loss = 4402.4465436041355
+
+iteration 149 begin ...
+loss = 4381.136275738478
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 149 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.00715643 0.01070244 0.01393451 0.01638975 0.01892549 0.02131231
+ 0.0230833  0.02507164 0.02670981 0.02828761 0.02953938 0.03089178
+ 0.03207512 0.03327054 0.03440559 0.03553661 0.03648651 0.03729956
+ 0.03833398 0.03909872 0.0399802  0.04071677 0.04170289 0.04254009
+ 0.04338131 0.04399311 0.04464113 0.04528111 0.0458768  0.04651275]
+MRR_all_avg_next:
+ [0.00715643 0.00892943 0.01000679 0.0106206  0.01112775 0.01152555
+ 0.01177855 0.01202709 0.01220911 0.01236689 0.01248069 0.01259339
+ 0.01268441 0.0127698  0.01284547 0.01291616 0.01297204 0.01301721
+ 0.01307165 0.01310989 0.01315186 0.01318534 0.01322822 0.0132631
+ 0.01329675 0.01332028 0.01334428 0.01336714 0.01338768 0.01340888]
+record_num:
+ 248448.0
+=========== testing next new item epoch: 149 ===========
+recall_all_avg_next_new:
+ [0.0019205  0.00310449 0.00446562 0.00544451 0.00633018 0.00727178
+ 0.00798963 0.00888462 0.00964909 0.01015252 0.01062798 0.01106615
+ 0.01151365 0.01216624 0.01266967 0.01312649 0.0137045  0.01418929
+ 0.01469272 0.01511225 0.01555974 0.01597927 0.01641744 0.01681832
+ 0.01723784 0.01753617 0.01789044 0.01827267 0.01864558 0.01902782]
+MRR_all_avg_next_new:
+ [0.0019205  0.00251249 0.0029662  0.00321093 0.00338806 0.00354499
+ 0.00364754 0.00375942 0.00384436 0.0038947  0.00393792 0.00397444
+ 0.00400886 0.00405547 0.00408904 0.00411759 0.00415159 0.00417852
+ 0.00420502 0.00422599 0.0042473  0.00426637 0.00428542 0.00430213
+ 0.00431891 0.00433038 0.0043435  0.00435715 0.00437001 0.00438275]
+record_num_new:
+ 107264.0
+iteration 150 begin ...
+loss = 4361.526799112558
+
+iteration 151 begin ...
+loss = 4342.774953007698
+
+iteration 152 begin ...
+loss = 4323.6307628154755
+
+iteration 153 begin ...
+loss = 4305.199295222759
+
+iteration 154 begin ...
+loss = 4288.0460841059685
+
+iteration 155 begin ...
+loss = 4269.375560194254
+
+iteration 156 begin ...
+loss = 4252.647873729467
+
+iteration 157 begin ...
+loss = 4236.536173731089
+
+iteration 158 begin ...
+loss = 4220.038902968168
+
+iteration 159 begin ...
+loss = 4203.6458984315395
+
+iteration 160 begin ...
+loss = 4188.478743642569
+
+iteration 161 begin ...
+loss = 4173.120844304562
+
+iteration 162 begin ...
+loss = 4157.975802451372
+
+iteration 163 begin ...
+loss = 4143.9586763083935
+
+iteration 164 begin ...
+loss = 4128.244575589895
+
+iteration 165 begin ...
+loss = 4115.701084852219
+
+iteration 166 begin ...
+loss = 4100.473604977131
+
+iteration 167 begin ...
+loss = 4087.237262636423
+
+iteration 168 begin ...
+loss = 4073.9104309380054
+
+iteration 169 begin ...
+loss = 4060.6363143622875
+
+iteration 170 begin ...
+loss = 4048.5333951711655
+
+iteration 171 begin ...
+loss = 4035.043910562992
+
+iteration 172 begin ...
+loss = 4022.391870290041
+
+iteration 173 begin ...
+loss = 4010.232544064522
+
+iteration 174 begin ...
+loss = 3997.932413518429
+
+iteration 175 begin ...
+loss = 3986.377712905407
+
+iteration 176 begin ...
+loss = 3974.1336511075497
+
+iteration 177 begin ...
+loss = 3962.4855953752995
+
+iteration 178 begin ...
+loss = 3951.02221134305
+
+iteration 179 begin ...
+loss = 3940.235896229744
+
+iteration 180 begin ...
+loss = 3928.7921627163887
+
+iteration 181 begin ...
+loss = 3917.72258451581
+
+iteration 182 begin ...
+loss = 3907.369204491377
+
+iteration 183 begin ...
+loss = 3896.095817029476
+
+iteration 184 begin ...
+loss = 3885.725740522146
+
+iteration 185 begin ...
+loss = 3875.2972290217876
+
+iteration 186 begin ...
+loss = 3865.4936438798904
+
+iteration 187 begin ...
+loss = 3854.528519511223
+
+iteration 188 begin ...
+loss = 3844.5267490446568
+
+iteration 189 begin ...
+loss = 3835.0674427449703
+
+iteration 190 begin ...
+loss = 3825.1993829905987
+
+iteration 191 begin ...
+loss = 3815.030033290386
+
+iteration 192 begin ...
+loss = 3805.927414238453
+
+iteration 193 begin ...
+loss = 3795.7470147907734
+
+iteration 194 begin ...
+loss = 3787.00114390254
+
+iteration 195 begin ...
+loss = 3777.432354480028
+
+iteration 196 begin ...
+loss = 3768.2476493418217
+
+iteration 197 begin ...
+loss = 3759.5617875158787
+
+iteration 198 begin ...
+loss = 3751.014080762863
+
+iteration 199 begin ...
+loss = 3740.3399938344955
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 199 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.00891535 0.01482    0.01919516 0.02273313 0.02543792 0.02783681
+ 0.0303806  0.03258227 0.03471551 0.03647041 0.03804418 0.0397387
+ 0.04111927 0.04264474 0.04378783 0.04481823 0.04580033 0.04672608
+ 0.0475995  0.04856147 0.04922962 0.04992594 0.05074301 0.05147556
+ 0.05215176 0.05290846 0.05345988 0.05410388 0.05470762 0.05538785]
+MRR_all_avg_next:
+ [0.00891535 0.01186767 0.01332606 0.01421055 0.01475151 0.01515133
+ 0.01551472 0.01578993 0.01602696 0.01620245 0.01634552 0.01648673
+ 0.01659293 0.01670189 0.0167781  0.0168425  0.01690027 0.0169517
+ 0.01699767 0.01704576 0.01707758 0.01710923 0.01714476 0.01717528
+ 0.01720233 0.01723143 0.01725185 0.01727485 0.01729567 0.01731835]
+record_num:
+ 248448.0
+=========== testing next new item epoch: 199 ===========
+recall_all_avg_next_new:
+ [0.00289939 0.00483853 0.00685225 0.00848374 0.00964909 0.01078647
+ 0.01209166 0.01298665 0.01387232 0.01460882 0.01538261 0.01630556
+ 0.01693951 0.01748956 0.01804893 0.01852439 0.01908376 0.01971771
+ 0.02024911 0.02076186 0.02117206 0.02158226 0.02209502 0.02248658
+ 0.02288746 0.02329766 0.02368922 0.02411806 0.02451894 0.02488253]
+MRR_all_avg_next_new:
+ [0.00289939 0.00386896 0.0045402  0.00494807 0.00518114 0.00537071
+ 0.00555716 0.00566903 0.00576744 0.00584109 0.00591144 0.00598835
+ 0.00603712 0.0060764  0.0061137  0.00614341 0.00617632 0.00621153
+ 0.0062395  0.00626514 0.00628467 0.00630332 0.00632561 0.00634193
+ 0.00635796 0.00637374 0.00638824 0.00640356 0.00641738 0.0064295 ]
+record_num_new:
+ 107264.0
+------------- end top_n_item is: 50 -----------------
+------------- end top_n_item is: 50 -----------------
+30Music
+============================================
++++++++++++++ start top_n_item is: 50 ++++++++++++++++
++++++++++++++ start top_n_item is: 50 ++++++++++++++++
+init model ... 
+init data_generation
+gen_train_data
+------------------------------
+Train records:2504978
+train_data_num2504978
+gen_test_old_data
+------------------------------
+Test records (next-item):616081
+test_old_data_num616081
+gen_test_new_data
+------------------------------
+Test records (next-new):337035
+test_new_data_num337035
+building model ... 
+running ... 
+2022-07-08 21:57:03.162830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:89:00.0
+iteration 0 begin ...
+loss = 14553.072435200214
+
+iteration 1 begin ...
+loss = 13590.857132554054
+
+iteration 2 begin ...
+loss = 13568.081265866756
+
+iteration 3 begin ...
+loss = 13561.985159814358
+
+iteration 4 begin ...
+loss = 13554.839709818363
+
+iteration 5 begin ...
+loss = 13547.342324078083
+
+iteration 6 begin ...
+loss = 13539.826318979263
+
+iteration 7 begin ...
+loss = 13532.306967198849
+
+iteration 8 begin ...
+loss = 13524.622100353241
+
+iteration 9 begin ...
+loss = 13516.614631175995
+
+iteration 10 begin ...
+loss = 13508.134961545467
+
+iteration 11 begin ...
+loss = 13498.963907301426
+
+iteration 12 begin ...
+loss = 13488.980324089527
+
+iteration 13 begin ...
+loss = 13478.010110676289
+
+iteration 14 begin ...
+loss = 13466.135781943798
+
+iteration 15 begin ...
+loss = 13453.157530725002
+
+iteration 16 begin ...
+loss = 13439.217771291733
+
+iteration 17 begin ...
+loss = 13424.316683351994
+
+iteration 18 begin ...
+loss = 13408.633007586002
+
+iteration 19 begin ...
+loss = 13392.063131451607
+
+iteration 20 begin ...
+loss = 13374.668853342533
+
+iteration 21 begin ...
+loss = 13356.287653625011
+
+iteration 22 begin ...
+loss = 13337.047243654728
+
+iteration 23 begin ...
+loss = 13316.957663178444
+
+iteration 24 begin ...
+loss = 13295.81777215004
+
+iteration 25 begin ...
+loss = 13273.588244974613
+
+iteration 26 begin ...
+loss = 13250.624099314213
+
+iteration 27 begin ...
+loss = 13226.290699243546
+
+iteration 28 begin ...
+loss = 13200.98328024149
+
+iteration 29 begin ...
+loss = 13174.624969303608
+
+iteration 30 begin ...
+loss = 13147.100824058056
+
+iteration 31 begin ...
+loss = 13118.288755238056
+
+iteration 32 begin ...
+loss = 13088.53497493267
+
+iteration 33 begin ...
+loss = 13057.498183965683
+
+iteration 34 begin ...
+loss = 13025.509196698666
+
+iteration 35 begin ...
+loss = 12992.317715168
+
+iteration 36 begin ...
+loss = 12958.060862898827
+
+iteration 37 begin ...
+loss = 12922.676152229309
+
+iteration 38 begin ...
+loss = 12886.416718542576
+
+iteration 39 begin ...
+loss = 12849.328326642513
+
+iteration 40 begin ...
+loss = 12811.111477077007
+
+iteration 41 begin ...
+loss = 12772.037022769451
+
+iteration 42 begin ...
+loss = 12732.3018399477
+
+iteration 43 begin ...
+loss = 12691.788976430893
+
+iteration 44 begin ...
+loss = 12650.382982850075
+
+iteration 45 begin ...
+loss = 12608.177166044712
+
+iteration 46 begin ...
+loss = 12565.644138455391
+
+iteration 47 begin ...
+loss = 12522.362973749638
+
+iteration 48 begin ...
+loss = 12478.399482786655
+
+iteration 49 begin ...
+loss = 12433.881187796593
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 49 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.00768429 0.01167818 0.01373111 0.01584084 0.01770877 0.01933813
+ 0.02138132 0.02300906 0.02474878 0.02632296 0.02789877 0.02918409
+ 0.03020487 0.03117535 0.03229351 0.03328508 0.0342588  0.03536722
+ 0.03643183 0.03741691 0.03826729 0.03919558 0.04032672 0.04138483
+ 0.04225144 0.0429866  0.04390028 0.04498922 0.04588667 0.04714927]
+MRR_all_avg_next:
+ [0.00768429 0.00968124 0.01036555 0.01089298 0.01126656 0.01153812
+ 0.01183001 0.01203348 0.01222678 0.0123842  0.01252745 0.01263456
+ 0.01271308 0.0127824  0.01285695 0.01291892 0.0129762  0.01303778
+ 0.01309381 0.01314306 0.01318356 0.01322575 0.01327493 0.01331902
+ 0.01335369 0.01338196 0.0134158  0.01345469 0.01348564 0.01352772]
+record_num:
+ 616192.0
+=========== testing next new item epoch: 49 ===========
+recall_all_avg_next_new:
+ [0.00161055 0.00290373 0.00418802 0.00543968 0.00638881 0.00743878
+ 0.00835232 0.00942898 0.01053827 0.01145181 0.01231195 0.01313651
+ 0.01382463 0.01438817 0.014839   0.01553602 0.01603134 0.0165504
+ 0.01709021 0.01773977 0.01824696 0.01880754 0.01926727 0.01983675
+ 0.02018971 0.02056936 0.02094604 0.02134646 0.02178246 0.02217694]
+MRR_all_avg_next_new:
+ [0.00161055 0.00225714 0.00268524 0.00299815 0.00318798 0.00336297
+ 0.00349348 0.00362806 0.00375132 0.00384267 0.00392087 0.00398958
+ 0.00404251 0.00408276 0.00411282 0.00415638 0.00418552 0.00421436
+ 0.00424277 0.00427524 0.0042994  0.00432488 0.00434487 0.00436859
+ 0.00438271 0.00439731 0.00441127 0.00442557 0.0044406  0.00445375]
+record_num_new:
+ 337152.0
+iteration 50 begin ...
+loss = 12388.720923900604
+
+iteration 51 begin ...
+loss = 12343.288976371288
+
+iteration 52 begin ...
+loss = 12297.009845972061
+
+iteration 53 begin ...
+loss = 12249.402921140194
+
+iteration 54 begin ...
+loss = 12200.935449659824
+
+iteration 55 begin ...
+loss = 12149.151911437511
+
+iteration 56 begin ...
+loss = 12092.685474097729
+
+iteration 57 begin ...
+loss = 12028.1704865098
+
+iteration 58 begin ...
+loss = 11952.93177729845
+
+iteration 59 begin ...
+loss = 11872.733880400658
+
+iteration 60 begin ...
+loss = 11788.622101187706
+
+iteration 61 begin ...
+loss = 11704.068721592426
+
+iteration 62 begin ...
+loss = nan
+
+iteration 63 begin ...
+loss = nan
+
+iteration 64 begin ...
+loss = nan
+
+iteration 65 begin ...
+loss = nan
+
+iteration 66 begin ...
+loss = nan
+
+iteration 67 begin ...
+loss = nan
+
+iteration 68 begin ...
+loss = nan
+
+iteration 69 begin ...
+loss = nan
+
+iteration 70 begin ...
+loss = nan
+
+iteration 71 begin ...
+loss = nan
+
+iteration 72 begin ...
+loss = nan
+
+iteration 73 begin ...
+loss = nan
+
+iteration 74 begin ...
+loss = nan
+
+iteration 75 begin ...
+loss = nan
+
+iteration 76 begin ...
+loss = nan
+
+iteration 77 begin ...
+loss = nan
+
+iteration 78 begin ...
+loss = nan
+
+iteration 79 begin ...
+loss = nan
+
+iteration 80 begin ...
+loss = nan
+
+iteration 81 begin ...
+loss = nan
+
+iteration 82 begin ...
+loss = nan
+
+iteration 83 begin ...
+loss = nan
+
+iteration 84 begin ...
+loss = nan
+
+iteration 85 begin ...
+loss = nan
+
+iteration 86 begin ...
+loss = nan
+
+iteration 87 begin ...
+loss = nan
+
+iteration 88 begin ...
+loss = nan
+
+iteration 89 begin ...
+loss = nan
+
+iteration 90 begin ...
+loss = nan
+
+iteration 91 begin ...
+loss = nan
+
+iteration 92 begin ...
+loss = nan
+
+iteration 93 begin ...
+loss = nan
+
+iteration 94 begin ...
+loss = nan
+
+iteration 95 begin ...
+loss = nan
+
+iteration 96 begin ...
+loss = nan
+
+iteration 97 begin ...
+loss = nan
+
+iteration 98 begin ...
+loss = nan
+
+iteration 99 begin ...
+loss = nan
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 99 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [8.60121521e-05 1.68778563e-04 2.15841816e-04 2.74265164e-04
+ 3.19705546e-04 3.58654445e-04 4.10586311e-04 4.57649564e-04
+ 4.86861238e-04 5.55021811e-04 6.00462194e-04 6.36165351e-04
+ 6.78359992e-04 7.49766307e-04 7.70863627e-04 8.09812526e-04
+ 8.48761425e-04 8.66613004e-04 8.90956066e-04 9.23413482e-04
+ 9.59116639e-04 9.75345347e-04 1.01753999e-03 1.04350592e-03
+ 1.07271759e-03 1.13114094e-03 1.15061539e-03 1.19930152e-03
+ 1.23175893e-03 1.35509711e-03]
+MRR_all_avg_next:
+ [8.60121521e-05 1.27395357e-04 1.43083108e-04 1.57688945e-04
+ 1.66777022e-04 1.73268505e-04 1.80687343e-04 1.86570250e-04
+ 1.89815991e-04 1.96632049e-04 2.00762992e-04 2.03738255e-04
+ 2.06983997e-04 2.12084448e-04 2.13490936e-04 2.15925242e-04
+ 2.18216354e-04 2.19208108e-04 2.20489322e-04 2.22112193e-04
+ 2.23812343e-04 2.24550012e-04 2.26384561e-04 2.27466475e-04
+ 2.28634942e-04 2.30881994e-04 2.31603270e-04 2.33342060e-04
+ 2.34461281e-04 2.38572554e-04]
+record_num:
+ 616192.0
+=========== testing next new item epoch: 99 ===========
+recall_all_avg_next_new:
+ [6.82184890e-05 1.42369021e-04 1.83893318e-04 2.22451595e-04
+ 2.40247722e-04 2.78805998e-04 3.32194381e-04 3.58888573e-04
+ 3.85582764e-04 4.44903189e-04 5.04223614e-04 5.30917806e-04
+ 5.66510061e-04 6.28796507e-04 6.52524677e-04 7.14811124e-04
+ 7.56335421e-04 7.62267464e-04 7.85995634e-04 8.30485953e-04
+ 8.54214123e-04 8.74976272e-04 9.22432612e-04 9.52092825e-04
+ 9.84719058e-04 1.02920938e-03 1.05293755e-03 1.09742787e-03
+ 1.15378227e-03 1.21903474e-03]
+MRR_all_avg_next_new:
+ [6.82184890e-05 1.05293755e-04 1.19135187e-04 1.28774756e-04
+ 1.32333982e-04 1.38760361e-04 1.46387273e-04 1.49724047e-04
+ 1.52690068e-04 1.58622111e-04 1.64014877e-04 1.66239393e-04
+ 1.68977258e-04 1.73426290e-04 1.75008168e-04 1.78901071e-04
+ 1.81343677e-04 1.81673235e-04 1.82922086e-04 1.85146602e-04
+ 1.86276515e-04 1.87220249e-04 1.89283568e-04 1.90519410e-04
+ 1.91824460e-04 1.93535626e-04 1.94414447e-04 1.96003387e-04
+ 1.97946642e-04 2.00121724e-04]
+record_num_new:
+ 337152.0
+iteration 100 begin ...
+loss = nan
+
+iteration 101 begin ...
+loss = nan
+
+iteration 102 begin ...
+loss = nan
+
+iteration 103 begin ...
+loss = nan
+
+iteration 104 begin ...
+loss = nan
+
+iteration 105 begin ...
+loss = nan
+
+iteration 106 begin ...
+loss = nan
+
+iteration 107 begin ...
+loss = nan
+
+iteration 108 begin ...
+loss = nan
+
+iteration 109 begin ...
+loss = nan
+
+iteration 110 begin ...
+loss = nan
+
+iteration 111 begin ...
+loss = nan
+
+iteration 112 begin ...
+loss = nan
+
+iteration 113 begin ...
+loss = nan
+
+iteration 114 begin ...
+loss = nan
+
+iteration 115 begin ...
+loss = nan
+
+iteration 116 begin ...
+loss = nan
+
+iteration 117 begin ...
+loss = nan
+
+iteration 118 begin ...
+loss = nan
+
+iteration 119 begin ...
+loss = nan
+
+iteration 120 begin ...
+loss = nan
+
+iteration 121 begin ...
+loss = nan
+
+iteration 122 begin ...
+loss = nan
+
+iteration 123 begin ...
+loss = nan
+
+iteration 124 begin ...
+loss = nan
+
+iteration 125 begin ...
+loss = nan
+
+iteration 126 begin ...
+loss = nan
+
+iteration 127 begin ...
+loss = nan
+
+iteration 128 begin ...
+loss = nan
+
+iteration 129 begin ...
+loss = nan
+
+iteration 130 begin ...
+loss = nan
+
+iteration 131 begin ...
+loss = nan
+
+iteration 132 begin ...
+loss = nan
+
+iteration 133 begin ...
+loss = nan
+
+iteration 134 begin ...
+loss = nan
+
+iteration 135 begin ...
+loss = nan
+
+iteration 136 begin ...
+loss = nan
+
+iteration 137 begin ...
+loss = nan
+
+iteration 138 begin ...
+loss = nan
+
+iteration 139 begin ...
+loss = nan
+
+iteration 140 begin ...
+loss = nan
+
+iteration 141 begin ...
+loss = nan
+
+iteration 142 begin ...
+loss = nan
+
+iteration 143 begin ...
+loss = nan
+
+iteration 144 begin ...
+loss = nan
+
+iteration 145 begin ...
+loss = nan
+
+iteration 146 begin ...
+loss = nan
+
+iteration 147 begin ...
+loss = nan
+
+iteration 148 begin ...
+loss = nan
+
+iteration 149 begin ...
+loss = nan
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 149 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [8.60121521e-05 1.68778563e-04 2.15841816e-04 2.74265164e-04
+ 3.19705546e-04 3.58654445e-04 4.10586311e-04 4.57649564e-04
+ 4.86861238e-04 5.55021811e-04 6.00462194e-04 6.36165351e-04
+ 6.78359992e-04 7.49766307e-04 7.70863627e-04 8.09812526e-04
+ 8.48761425e-04 8.66613004e-04 8.90956066e-04 9.23413482e-04
+ 9.59116639e-04 9.75345347e-04 1.01753999e-03 1.04350592e-03
+ 1.07271759e-03 1.13114094e-03 1.15061539e-03 1.19930152e-03
+ 1.23175893e-03 1.35509711e-03]
+MRR_all_avg_next:
+ [8.60121521e-05 1.27395357e-04 1.43083108e-04 1.57688945e-04
+ 1.66777022e-04 1.73268505e-04 1.80687343e-04 1.86570250e-04
+ 1.89815991e-04 1.96632049e-04 2.00762992e-04 2.03738255e-04
+ 2.06983997e-04 2.12084448e-04 2.13490936e-04 2.15925242e-04
+ 2.18216354e-04 2.19208108e-04 2.20489322e-04 2.22112193e-04
+ 2.23812343e-04 2.24550012e-04 2.26384561e-04 2.27466475e-04
+ 2.28634942e-04 2.30881994e-04 2.31603270e-04 2.33342060e-04
+ 2.34461281e-04 2.38572554e-04]
+record_num:
+ 616192.0
+=========== testing next new item epoch: 149 ===========
+recall_all_avg_next_new:
+ [6.82184890e-05 1.42369021e-04 1.83893318e-04 2.22451595e-04
+ 2.40247722e-04 2.78805998e-04 3.32194381e-04 3.58888573e-04
+ 3.85582764e-04 4.44903189e-04 5.04223614e-04 5.30917806e-04
+ 5.66510061e-04 6.28796507e-04 6.52524677e-04 7.14811124e-04
+ 7.56335421e-04 7.62267464e-04 7.85995634e-04 8.30485953e-04
+ 8.54214123e-04 8.74976272e-04 9.22432612e-04 9.52092825e-04
+ 9.84719058e-04 1.02920938e-03 1.05293755e-03 1.09742787e-03
+ 1.15378227e-03 1.21903474e-03]
+MRR_all_avg_next_new:
+ [6.82184890e-05 1.05293755e-04 1.19135187e-04 1.28774756e-04
+ 1.32333982e-04 1.38760361e-04 1.46387273e-04 1.49724047e-04
+ 1.52690068e-04 1.58622111e-04 1.64014877e-04 1.66239393e-04
+ 1.68977258e-04 1.73426290e-04 1.75008168e-04 1.78901071e-04
+ 1.81343677e-04 1.81673235e-04 1.82922086e-04 1.85146602e-04
+ 1.86276515e-04 1.87220249e-04 1.89283568e-04 1.90519410e-04
+ 1.91824460e-04 1.93535626e-04 1.94414447e-04 1.96003387e-04
+ 1.97946642e-04 2.00121724e-04]
+record_num_new:
+ 337152.0
+iteration 150 begin ...
+loss = nan
+
+iteration 151 begin ...
+loss = nan
+
+iteration 152 begin ...
+loss = nan
+
+iteration 153 begin ...
+loss = nan
+
+iteration 154 begin ...
+loss = nan
+
+iteration 155 begin ...
+loss = nan
+
+iteration 156 begin ...
+loss = nan
+
+iteration 157 begin ...
+loss = nan
+
+iteration 158 begin ...
+loss = nan
+
+iteration 159 begin ...
+loss = nan
+
+iteration 160 begin ...
+loss = nan
+
+iteration 161 begin ...
+loss = nan
+
+iteration 162 begin ...
+loss = nan
+
+iteration 163 begin ...
+loss = nan
+
+iteration 164 begin ...
+loss = nan
+
+iteration 165 begin ...
+loss = nan
+
+iteration 166 begin ...
+loss = nan
+
+iteration 167 begin ...
+loss = nan
+
+iteration 168 begin ...
+loss = nan
+
+iteration 169 begin ...
+loss = nan
+
+iteration 170 begin ...
+loss = nan
+
+iteration 171 begin ...
+loss = nan
+
+iteration 172 begin ...
+loss = nan
+
+iteration 173 begin ...
+loss = nan
+
+iteration 174 begin ...
+loss = nan
+
+iteration 175 begin ...
+loss = nan
+
+iteration 176 begin ...
+loss = nan
+
+iteration 177 begin ...
+loss = nan
+
+iteration 178 begin ...
+loss = nan
+
+iteration 179 begin ...
+loss = nan
+
+iteration 180 begin ...
+loss = nan
+
+iteration 181 begin ...
+loss = nan
+
+iteration 182 begin ...
+loss = nan
+
+iteration 183 begin ...
+loss = nan
+
+iteration 184 begin ...
+loss = nan
+
+iteration 185 begin ...
+loss = nan
+
+iteration 186 begin ...
+loss = nan
+
+iteration 187 begin ...
+loss = nan
+
+iteration 188 begin ...
+loss = nan
+
+iteration 189 begin ...
+loss = nan
+
+iteration 190 begin ...
+loss = nan
+
+iteration 191 begin ...
+loss = nan
+
+iteration 192 begin ...
+loss = nan
+
+iteration 193 begin ...
+loss = nan
+
+iteration 194 begin ...
+loss = nan
+
+iteration 195 begin ...
+loss = nan
+
+iteration 196 begin ...
+loss = nan
+
+iteration 197 begin ...
+loss = nan
+
+iteration 198 begin ...
+loss = nan
+
+iteration 199 begin ...
+loss = nan
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 199 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [8.60121521e-05 1.68778563e-04 2.15841816e-04 2.74265164e-04
+ 3.19705546e-04 3.58654445e-04 4.10586311e-04 4.57649564e-04
+ 4.86861238e-04 5.56644682e-04 6.02085064e-04 6.37788222e-04
+ 6.79982862e-04 7.51389177e-04 7.72486498e-04 8.11435397e-04
+ 8.50384296e-04 8.68235875e-04 8.92578936e-04 9.25036352e-04
+ 9.60739510e-04 9.76968218e-04 1.01916286e-03 1.04512879e-03
+ 1.07434047e-03 1.13276381e-03 1.15223826e-03 1.20092439e-03
+ 1.23338180e-03 1.35671998e-03]
+MRR_all_avg_next:
+ [8.60121521e-05 1.27395357e-04 1.43083108e-04 1.57688945e-04
+ 1.66777022e-04 1.73268505e-04 1.80687343e-04 1.86570250e-04
+ 1.89815991e-04 1.96794336e-04 2.00925279e-04 2.03900543e-04
+ 2.07146284e-04 2.12246735e-04 2.13653223e-04 2.16087529e-04
+ 2.18378641e-04 2.19370395e-04 2.20651609e-04 2.22274480e-04
+ 2.23974630e-04 2.24712299e-04 2.26546849e-04 2.27628762e-04
+ 2.28797229e-04 2.31044281e-04 2.31765557e-04 2.33504347e-04
+ 2.34623569e-04 2.38734841e-04]
+record_num:
+ 616192.0
+=========== testing next new item epoch: 199 ===========
+recall_all_avg_next_new:
+ [6.82184890e-05 1.42369021e-04 1.83893318e-04 2.22451595e-04
+ 2.40247722e-04 2.78805998e-04 3.32194381e-04 3.58888573e-04
+ 3.85582764e-04 4.44903189e-04 5.04223614e-04 5.30917806e-04
+ 5.66510061e-04 6.28796507e-04 6.52524677e-04 7.14811124e-04
+ 7.56335421e-04 7.62267464e-04 7.85995634e-04 8.30485953e-04
+ 8.54214123e-04 8.74976272e-04 9.22432612e-04 9.52092825e-04
+ 9.84719058e-04 1.02920938e-03 1.05293755e-03 1.09742787e-03
+ 1.15378227e-03 1.21903474e-03]
+MRR_all_avg_next_new:
+ [6.82184890e-05 1.05293755e-04 1.19135187e-04 1.28774756e-04
+ 1.32333982e-04 1.38760361e-04 1.46387273e-04 1.49724047e-04
+ 1.52690068e-04 1.58622111e-04 1.64014877e-04 1.66239393e-04
+ 1.68977258e-04 1.73426290e-04 1.75008168e-04 1.78901071e-04
+ 1.81343677e-04 1.81673235e-04 1.82922086e-04 1.85146602e-04
+ 1.86276515e-04 1.87220249e-04 1.89283568e-04 1.90519410e-04
+ 1.91824460e-04 1.93535626e-04 1.94414447e-04 1.96003387e-04
+ 1.97946642e-04 2.00121724e-04]
+record_num_new:
+ 337152.0
+------------- end top_n_item is: 50 -----------------
+------------- end top_n_item is: 50 -----------------
+xiami
+============================================
++++++++++++++ start top_n_item is: 10 ++++++++++++++++
++++++++++++++ start top_n_item is: 10 ++++++++++++++++
+init model ... 
+init data_generation
+gen_train_data
+------------------------------
+Train records:2502354
+train_data_num2502354
+gen_test_old_data
+------------------------------
+Test records (next-item):612641
+test_old_data_num612641
+gen_test_new_data
+------------------------------
+Test records (next-new):218593
+test_new_data_num218593
+building model ... 
+running ... 
+2022-07-09 01:43:55.798737: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:89:00.0
+2022-07-09 01:43:55.798865: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2022-07-09 01:43:55.798892: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2022-07-09 01:43:55.798913: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2022-07-09 01:43:55.798933: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2022-07-09 01:43:55.798952: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2022-07-09 01:43:55.798972: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2022-07-09 01:43:55.798992: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2022-07-09 01:43:55.799749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2022-07-09 01:43:55.799805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-07-09 01:43:55.799817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2022-07-09 01:43:55.799824: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2022-07-09 01:43:55.800638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15224 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:89:00.0, compute capability: 6.0)
+iteration 0 begin ...
+loss = 14418.276187617332
+
+iteration 1 begin ...
+loss = 13386.956076443195
+
+iteration 2 begin ...
+loss = 13325.661531567574
+
+iteration 3 begin ...
+loss = 13280.821456611156
+
+iteration 4 begin ...
+loss = 13233.265997231007
+
+iteration 5 begin ...
+loss = 13184.42371058464
+
+iteration 6 begin ...
+loss = 13134.716463923454
+
+iteration 7 begin ...
+loss = 13083.588743507862
+
+iteration 8 begin ...
+loss = 13029.994946599007
+
+iteration 9 begin ...
+loss = 12973.20656967163
+
+iteration 10 begin ...
+loss = 12912.641914188862
+
+iteration 11 begin ...
+loss = 12847.71800071001
+
+iteration 12 begin ...
+loss = 12777.62140083313
+
+iteration 13 begin ...
+loss = 12701.791724085808
+
+iteration 14 begin ...
+loss = 12619.468279361725
+
+iteration 15 begin ...
+loss = 12529.967882156372
+
+iteration 16 begin ...
+loss = 12432.797563135624
+
+iteration 17 begin ...
+loss = 12327.649930417538
+
+iteration 18 begin ...
+loss = 12214.588218808174
+
+iteration 19 begin ...
+loss = 12093.701482772827
+
+iteration 20 begin ...
+loss = 11966.243234157562
+
+iteration 21 begin ...
+loss = 11832.302174508572
+
+iteration 22 begin ...
+loss = 11694.127324938774
+
+iteration 23 begin ...
+loss = 11551.935747802258
+
+iteration 24 begin ...
+loss = 11407.571276903152
+
+iteration 25 begin ...
+loss = 11261.547818601131
+
+iteration 26 begin ...
+loss = 11113.91409677267
+
+iteration 27 begin ...
+loss = 10961.195635795593
+
+iteration 28 begin ...
+loss = 10792.020835459232
+
+iteration 29 begin ...
+loss = 10588.29829916358
+
+iteration 30 begin ...
+loss = 10359.057914048433
+
+iteration 31 begin ...
+loss = 10135.835465669632
+
+iteration 32 begin ...
+loss = 9933.314383268356
+
+iteration 33 begin ...
+loss = 9757.152897655964
+
+iteration 34 begin ...
+loss = 9602.280284285545
+
+iteration 35 begin ...
+loss = 9466.502891421318
+
+iteration 36 begin ...
+loss = 9345.427320957184
+
+iteration 37 begin ...
+loss = 9236.017200231552
+
+iteration 38 begin ...
+loss = 9137.468257039785
+
+iteration 39 begin ...
+loss = 9046.47902944684
+
+iteration 40 begin ...
+loss = 8962.550401508808
+
+iteration 41 begin ...
+loss = 8885.462551236153
+
+iteration 42 begin ...
+loss = 8812.882905185223
+
+iteration 43 begin ...
+loss = 8745.415313512087
+
+iteration 44 begin ...
+loss = 8681.803080767393
+
+iteration 45 begin ...
+loss = 8622.210757136345
+
+iteration 46 begin ...
+loss = 8565.945246338844
+
+iteration 47 begin ...
+loss = 8512.077376455069
+
+iteration 48 begin ...
+loss = 8461.472539365292
+
+iteration 49 begin ...
+loss = 8413.120363086462
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 49 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.04387208 0.04999217 0.05471524 0.05700987 0.05871044 0.06052851
+ 0.06237107 0.06394597 0.06518958 0.06643481 0.0677339  0.06886
+ 0.06970212 0.07083964 0.07186782 0.07286988 0.07368263 0.0745117
+ 0.07524611 0.07626776 0.0769222  0.07751952 0.07807114 0.07875333
+ 0.07932291 0.08003284 0.08063669 0.08121116 0.08172035 0.08241233]
+MRR_all_avg_next:
+ [0.04387208 0.04693212 0.04850648 0.04908014 0.04942025 0.04972326
+ 0.04998649 0.05018335 0.05032153 0.05044605 0.05056415 0.05065799
+ 0.05072277 0.05080402 0.05087257 0.05093519 0.050983   0.05102906
+ 0.05106772 0.0511188  0.05114996 0.05117711 0.0512011  0.05122952
+ 0.0512523  0.05127961 0.05130197 0.05132249 0.05134005 0.05136312]
+record_num:
+ 612736.0
+=========== testing next new item epoch: 49 ===========
+recall_all_avg_next_new:
+ [0.00224129 0.00387423 0.00515497 0.00592341 0.00657293 0.00751519
+ 0.00833852 0.00912983 0.00975648 0.01040142 0.01101892 0.01149005
+ 0.01192001 0.01245517 0.01307725 0.01363986 0.01403323 0.01445404
+ 0.01490687 0.01532769 0.01577137 0.01621505 0.01660842 0.01704296
+ 0.01753696 0.01791203 0.01841975 0.0189229  0.01938031 0.0197691 ]
+MRR_all_avg_next_new:
+ [0.00224129 0.00305776 0.00348467 0.00367678 0.00380669 0.00396373
+ 0.00408135 0.00418026 0.00424989 0.00431439 0.00437052 0.00440978
+ 0.00444286 0.00448108 0.00452255 0.00455772 0.00458086 0.00460423
+ 0.00462807 0.00464911 0.00467024 0.0046904  0.00470751 0.00472561
+ 0.00474537 0.0047598  0.0047786  0.00479657 0.00481235 0.00482531]
+record_num_new:
+ 218624.0
+iteration 50 begin ...
+loss = 8367.208624869585
+
+iteration 51 begin ...
+loss = 8322.634925037622
+
+iteration 52 begin ...
+loss = 8281.567690819502
+
+iteration 53 begin ...
+loss = 8240.1256377697
+
+iteration 54 begin ...
+loss = 8202.302660405636
+
+iteration 55 begin ...
+loss = 8165.064582675695
+
+iteration 56 begin ...
+loss = 8128.641914695501
+
+iteration 57 begin ...
+loss = 8094.18561694026
+
+iteration 58 begin ...
+loss = 8060.96603000164
+
+iteration 59 begin ...
+loss = 8028.813297837973
+
+iteration 60 begin ...
+loss = 7997.407722532749
+
+iteration 61 begin ...
+loss = 7966.946882903576
+
+iteration 62 begin ...
+loss = 7938.126818090677
+
+iteration 63 begin ...
+loss = 7909.76319745183
+
+iteration 64 begin ...
+loss = 7881.569054365158
+
+iteration 65 begin ...
+loss = 7855.263769030571
+
+iteration 66 begin ...
+loss = 7829.0028374791145
+
+iteration 67 begin ...
+loss = 7803.80025652051
+
+iteration 68 begin ...
+loss = 7778.717949688435
+
+iteration 69 begin ...
+loss = 7753.793611437082
+
+iteration 70 begin ...
+loss = 7731.122175514698
+
+iteration 71 begin ...
+loss = 7706.989158511162
+
+iteration 72 begin ...
+loss = 7685.135435253382
+
+iteration 73 begin ...
+loss = 7662.735411256552
+
+iteration 74 begin ...
+loss = 7640.726227551699
+
+iteration 75 begin ...
+loss = 7619.200880736113
+
+iteration 76 begin ...
+loss = 7598.344714432955
+
+iteration 77 begin ...
+loss = 7578.043158739805
+
+iteration 78 begin ...
+loss = 7557.936299830675
+
+iteration 79 begin ...
+loss = 7537.505331933498
+
+iteration 80 begin ...
+loss = 7517.887385338545
+
+iteration 81 begin ...
+loss = 7499.227129548788
+
+iteration 82 begin ...
+loss = 7479.882479310036
+
+iteration 83 begin ...
+loss = 7461.363738894463
+
+iteration 84 begin ...
+loss = 7443.202038437128
+
+iteration 85 begin ...
+loss = 7424.48167052865
+
+iteration 86 begin ...
+loss = 7406.848894685507
+
+iteration 87 begin ...
+loss = 7388.560164570808
+
+iteration 88 begin ...
+loss = 7371.5521322488785
+
+iteration 89 begin ...
+loss = 7354.368929117918
+
+iteration 90 begin ...
+loss = 7337.006243944168
+
+iteration 91 begin ...
+loss = 7319.722044795752
+
+iteration 92 begin ...
+loss = 7302.704042255878
+
+iteration 93 begin ...
+loss = 7287.405862748623
+
+iteration 94 begin ...
+loss = 7269.037095099688
+
+iteration 95 begin ...
+loss = 7254.591890633106
+
+iteration 96 begin ...
+loss = 7237.097496032715
+
+iteration 97 begin ...
+loss = 7221.3020804822445
+
+iteration 98 begin ...
+loss = 7206.045579075813
+
+iteration 99 begin ...
+loss = 7189.9146310687065
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 99 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.03844396 0.05680424 0.063285   0.06780245 0.07099795 0.07390785
+ 0.07692546 0.07882677 0.0813254  0.0836494  0.08528959 0.08671434
+ 0.08817174 0.08943003 0.09104084 0.09253904 0.09385608 0.0950442
+ 0.09605115 0.0969455  0.09826255 0.09911773 0.1001508  0.10102067
+ 0.10190849 0.10283874 0.10374941 0.10468293 0.10544182 0.10631985]
+MRR_all_avg_next:
+ [0.03844396 0.0476241  0.04978436 0.05091372 0.05155282 0.0520378
+ 0.05246889 0.05270655 0.05298418 0.05321658 0.05336568 0.05348441
+ 0.05359652 0.0536864  0.05379379 0.05388742 0.0539649  0.0540309
+ 0.0540839  0.05412862 0.05419134 0.05423021 0.05427512 0.05431137
+ 0.05434688 0.05438266 0.05441639 0.05444973 0.0544759  0.05450516]
+record_num:
+ 612736.0
+=========== testing next new item epoch: 99 ===========
+recall_all_avg_next_new:
+ [0.00282677 0.00536538 0.00762039 0.00936311 0.01101892 0.01228136
+ 0.01363528 0.01472391 0.01584913 0.01688744 0.01776109 0.01869877
+ 0.01948094 0.02029969 0.02122823 0.02207443 0.02290691 0.02374396
+ 0.02455357 0.02529    0.02617279 0.02690464 0.02774169 0.02842323
+ 0.02909104 0.02981374 0.03052272 0.03124085 0.03177144 0.03234778]
+MRR_all_avg_next_new:
+ [0.00282677 0.00409607 0.00484774 0.00528342 0.00561459 0.00582499
+ 0.00601841 0.00615449 0.00627951 0.00638334 0.00646277 0.00654091
+ 0.00660107 0.00665956 0.00672146 0.00677435 0.00682332 0.00686982
+ 0.00691243 0.00694925 0.00699129 0.00702455 0.00706095 0.00708935
+ 0.00711606 0.00714385 0.00717011 0.00719576 0.00721406 0.00723327]
+record_num_new:
+ 218624.0
+iteration 100 begin ...
+loss = 7174.83083820343
+
+iteration 101 begin ...
+loss = 7158.9445252120495
+
+iteration 102 begin ...
+loss = 7143.970837295055
+
+iteration 103 begin ...
+loss = 7127.6562051177025
+
+iteration 104 begin ...
+loss = 7113.681577175856
+
+iteration 105 begin ...
+loss = 7097.656884670258
+
+iteration 106 begin ...
+loss = 7082.787159740925
+
+iteration 107 begin ...
+loss = 7068.518639534712
+
+iteration 108 begin ...
+loss = 7053.803605854511
+
+iteration 109 begin ...
+loss = 7038.54589214921
+
+iteration 110 begin ...
+loss = 7024.384682819247
+
+iteration 111 begin ...
+loss = 7009.562099784613
+
+iteration 112 begin ...
+loss = 6995.726098001003
+
+iteration 113 begin ...
+loss = 6980.427915364504
+
+iteration 114 begin ...
+loss = 6967.119196370244
+
+iteration 115 begin ...
+loss = 6952.5240179896355
+
+iteration 116 begin ...
+loss = 6938.71957680583
+
+iteration 117 begin ...
+loss = nan
+
+iteration 118 begin ...
+loss = nan
+
+iteration 119 begin ...
+loss = nan
+
+iteration 120 begin ...
+loss = nan
+
+iteration 121 begin ...
+loss = nan
+
+iteration 122 begin ...
+loss = nan
+
+iteration 123 begin ...
+loss = nan
+
+iteration 124 begin ...
+loss = nan
+
+iteration 125 begin ...
+loss = nan
+
+iteration 126 begin ...
+loss = nan
+
+iteration 127 begin ...
+loss = nan
+
+iteration 128 begin ...
+loss = nan
+
+iteration 129 begin ...
+loss = nan
+
+iteration 130 begin ...
+loss = nan
+
+iteration 131 begin ...
+loss = nan
+
+iteration 132 begin ...
+loss = nan
+
+iteration 133 begin ...
+loss = nan
+
+iteration 134 begin ...
+loss = nan
+
+iteration 135 begin ...
+loss = nan
+
+iteration 136 begin ...
+loss = nan
+
+iteration 137 begin ...
+loss = nan
+
+iteration 138 begin ...
+loss = nan
+
+iteration 139 begin ...
+loss = nan
+
+iteration 140 begin ...
+loss = nan
+
+iteration 141 begin ...
+loss = nan
+
+iteration 142 begin ...
+loss = nan
+
+iteration 143 begin ...
+loss = nan
+
+iteration 144 begin ...
+loss = nan
+
+iteration 145 begin ...
+loss = nan
+
+iteration 146 begin ...
+loss = nan
+
+iteration 147 begin ...
+loss = nan
+
+iteration 148 begin ...
+loss = nan
+
+iteration 149 begin ...
+loss = nan
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 149 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.00021216 0.00042106 0.00050103 0.00060385 0.00068871 0.00081112
+ 0.00091067 0.00098411 0.00105592 0.00111794 0.00120443 0.00125829
+ 0.00132194 0.00139375 0.00142965 0.00147535 0.00152268 0.00159286
+ 0.0016206  0.0017071  0.00173647 0.00176259 0.0018344  0.00186704
+ 0.00190784 0.00203677 0.00208899 0.00212163 0.0021559  0.00229299]
+MRR_all_avg_next:
+ [0.00021216 0.00031661 0.00034327 0.00036897 0.00038595 0.00040635
+ 0.00042057 0.00042975 0.00043773 0.00044393 0.00045179 0.00045628
+ 0.00046118 0.00046631 0.0004687  0.00047156 0.00047434 0.00047824
+ 0.0004797  0.00048402 0.00048542 0.00048661 0.00048973 0.00049109
+ 0.00049272 0.00049768 0.00049962 0.00050078 0.00050196 0.00050653]
+record_num:
+ 612736.0
+=========== testing next new item epoch: 149 ===========
+recall_all_avg_next_new:
+ [0.0002653  0.00038422 0.00046198 0.00061292 0.00067239 0.00081876
+ 0.00090109 0.00091939 0.00100629 0.00106576 0.00119383 0.00127159
+ 0.00135392 0.00145455 0.00149114 0.00154603 0.0015689  0.00161922
+ 0.00165124 0.00179761 0.0018159  0.0018525  0.00194855 0.00201259
+ 0.00204918 0.00204918 0.0020995  0.00210407 0.00213609 0.00219555]
+MRR_all_avg_next_new:
+ [0.0002653  0.00032476 0.00035068 0.00038841 0.00040031 0.0004247
+ 0.00043646 0.00043875 0.00044841 0.00045435 0.000466   0.00047248
+ 0.00047881 0.000486   0.00048844 0.00049187 0.00049321 0.00049601
+ 0.00049769 0.00050501 0.00050588 0.00050755 0.00051172 0.00051439
+ 0.00051585 0.00051585 0.00051772 0.00051788 0.00051899 0.00052097]
+record_num_new:
+ 218624.0
+iteration 150 begin ...
+loss = nan
+
+iteration 151 begin ...
+loss = nan
+
+iteration 152 begin ...
+loss = nan
+
+iteration 153 begin ...
+loss = nan
+
+iteration 154 begin ...
+loss = nan
+
+iteration 155 begin ...
+loss = nan
+
+iteration 156 begin ...
+loss = nan
+
+iteration 157 begin ...
+loss = nan
+
+iteration 158 begin ...
+loss = nan
+
+iteration 159 begin ...
+loss = nan
+
+iteration 160 begin ...
+loss = nan
+
+iteration 161 begin ...
+loss = nan
+
+iteration 162 begin ...
+loss = nan
+
+iteration 163 begin ...
+loss = nan
+
+iteration 164 begin ...
+loss = nan
+
+iteration 165 begin ...
+loss = nan
+
+iteration 166 begin ...
+loss = nan
+
+iteration 167 begin ...
+loss = nan
+
+iteration 168 begin ...
+loss = nan
+
+iteration 169 begin ...
+loss = nan
+
+iteration 170 begin ...
+loss = nan
+
+iteration 171 begin ...
+loss = nan
+
+iteration 172 begin ...
+loss = nan
+
+iteration 173 begin ...
+loss = nan
+
+iteration 174 begin ...
+loss = nan
+
+iteration 175 begin ...
+loss = nan
+
+iteration 176 begin ...
+loss = nan
+
+iteration 177 begin ...
+loss = nan
+
+iteration 178 begin ...
+loss = nan
+
+iteration 179 begin ...
+loss = nan
+
+iteration 180 begin ...
+loss = nan
+
+iteration 181 begin ...
+loss = nan
+
+iteration 182 begin ...
+loss = nan
+
+iteration 183 begin ...
+loss = nan
+
+iteration 184 begin ...
+loss = nan
+
+iteration 185 begin ...
+loss = nan
+
+iteration 186 begin ...
+loss = nan
+
+iteration 187 begin ...
+loss = nan
+
+iteration 188 begin ...
+loss = nan
+
+iteration 189 begin ...
+loss = nan
+
+iteration 190 begin ...
+loss = nan
+
+iteration 191 begin ...
+loss = nan
+
+iteration 192 begin ...
+loss = nan
+
+iteration 193 begin ...
+loss = nan
+
+iteration 194 begin ...
+loss = nan
+
+iteration 195 begin ...
+loss = nan
+
+iteration 196 begin ...
+loss = nan
+
+iteration 197 begin ...
+loss = nan
+
+iteration 198 begin ...
+loss = nan
+
+iteration 199 begin ...
+loss = nan
+
+eval ...
+~~~~~~~~~~~~~ testing next item epoch: 199 ~~~~~~~~~~~~~
+recall_all_avg_next:
+ [0.00021216 0.00042106 0.00050103 0.00060385 0.00068871 0.00081112
+ 0.00091067 0.00098411 0.00105592 0.00111794 0.00120443 0.00125829
+ 0.00132194 0.00139375 0.00142965 0.00147535 0.00152268 0.00159286
+ 0.0016206  0.0017071  0.00173647 0.00176259 0.0018344  0.00186704
+ 0.00190784 0.00203677 0.00208899 0.00212163 0.0021559  0.00229299]
+MRR_all_avg_next:
+ [0.00021216 0.00031661 0.00034327 0.00036897 0.00038595 0.00040635
+ 0.00042057 0.00042975 0.00043773 0.00044393 0.00045179 0.00045628
+ 0.00046118 0.00046631 0.0004687  0.00047156 0.00047434 0.00047824
+ 0.0004797  0.00048402 0.00048542 0.00048661 0.00048973 0.00049109
+ 0.00049272 0.00049768 0.00049962 0.00050078 0.00050196 0.00050653]
+record_num:
+ 612736.0
+=========== testing next new item epoch: 199 ===========
+recall_all_avg_next_new:
+ [0.0002653  0.00038422 0.00046198 0.00061292 0.00067239 0.00081876
+ 0.00090109 0.00091939 0.00100629 0.00106576 0.00119383 0.00127159
+ 0.00135392 0.00145455 0.00149114 0.00154603 0.0015689  0.00161922
+ 0.00165124 0.00179761 0.0018159  0.0018525  0.00194855 0.00201259
+ 0.00204918 0.00204918 0.0020995  0.00210407 0.00213609 0.00219555]
+MRR_all_avg_next_new:
+ [0.0002653  0.00032476 0.00035068 0.00038841 0.00040031 0.0004247
+ 0.00043646 0.00043875 0.00044841 0.00045435 0.000466   0.00047248
+ 0.00047881 0.000486   0.00048844 0.00049187 0.00049321 0.00049601
+ 0.00049769 0.00050501 0.00050588 0.00050755 0.00051172 0.00051439
+ 0.00051585 0.00051585 0.00051772 0.00051788 0.00051899 0.00052097]
+record_num_new:
+ 218624.0
+------------- end top_n_item is: 10 -----------------
+------------- end top_n_item is: 10 -----------------
