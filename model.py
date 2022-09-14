@@ -145,51 +145,6 @@ class SessionGraph(Module):
 
         return scores  # batch_size x item_num
 
-        # beta2：在short-中融入最后一个item；拼接时不考虑使用dynamic
-        # ht = usr_embedding.view(usr_embedding.shape[0], usr_embedding.shape[1], 1)  # batch_size x latent_size
-        #
-        # last_music_embedding = music_embedding[:, -1, :]  # 滑动窗口最右侧的一首歌 batch_size x hidden
-        # last_artist_embedding = artist_embedding[:, -1, :]
-        # last_album_embedding = album_embedding[:, -1, :]
-        #
-        # q1_1 = self.linear_one_1(last_music_embedding).view(last_music_embedding.shape[0], 1,
-        #                                                     last_music_embedding.shape[1])
-        # # batch_size x seq_length x latent_size
-        # q1_2 = self.linear_two_1(music_embedding)
-        #
-        # q2_1 = self.linear_one_2(last_artist_embedding).view(last_artist_embedding.shape[0], 1,
-        #                                                      last_artist_embedding.shape[1])
-        # q2_2 = self.linear_two_2(artist_embedding)
-        #
-        # q3_1 = self.linear_one_3(last_album_embedding).view(last_album_embedding.shape[0], 1,
-        #                                                     last_album_embedding.shape[1])
-        # q3_2 = self.linear_two_3(album_embedding)
-        #
-        # # 激活函数tanh
-        # alpha = torch.bmm((torch.tanh(q1_1 + q1_2)), ht)  # batch x node x 1
-        # beta = torch.bmm((torch.tanh(q2_1 + q2_2)), ht)
-        # delta = torch.bmm((torch.tanh(q3_1 + q3_2)), ht)
-        #
-        # alpha = torch.softmax(alpha, dim=1)
-        # beta = torch.softmax(beta, dim=1)
-        # delta = torch.softmax(delta, dim=1)
-        # a = torch.sum(alpha * music_embedding, 1)  # batch x hidden
-        # b = torch.sum(beta * artist_embedding, 1)
-        # c = torch.sum(delta * album_embedding, 1)
-        #
-        # # a，b向量进行layernorm
-        # layernorm = trans_to_cuda(nn.LayerNorm(a.shape[1], eps=1e-6))
-        # a = layernorm(a)
-        # b = layernorm(b)
-        # c = layernorm(c)
-        #
-        # st = self.linear_transform1(torch.cat([a, b, c], 1))  # short-term
-        # all = self.linear_transform4(torch.cat([usr_embedding, st], 1))
-        # item_embedding = self.item_embedding.weight[1:self.n_music + 1]  # n_nodes x latent_size
-        # scores = torch.matmul(all, item_embedding.transpose(1, 0))
-        #
-        # return scores  # batch_size x item_num
-
     def forward(self, item, usr, A):
         # usr batch x 1
         # item: batch x max_node
