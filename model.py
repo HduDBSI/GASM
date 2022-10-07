@@ -76,13 +76,9 @@ class SessionGraph(Module):
         self.linear_one_3 = nn.Linear(self.hidden_size, self.hidden_size, bias=True)
         self.linear_two_3 = nn.Linear(self.hidden_size, self.hidden_size, bias=True)
 
-        self.linear_layer2 = nn.Linear(self.hidden_size, self.hidden_size, bias=True)
-        self.linear_transform = nn.Linear(self.hidden_size * 4, self.hidden_size, bias=True)
         self.linear_transform1 = nn.Linear(self.hidden_size * 3, self.hidden_size, bias=True)
         self.linear_transform2 = nn.Linear(self.hidden_size * 3, self.hidden_size, bias=True)
         self.linear_transform3 = nn.Linear(self.hidden_size * 3, self.hidden_size, bias=True)
-        self.linear_transform4 = nn.Linear(self.hidden_size * 2, self.hidden_size, bias=True)
-        # self.linear_transform = nn.Linear(self.hidden_size, self.hidden_size, bias=True)
 
         self.loss_function = nn.CrossEntropyLoss()
         self.optimizer = torch.optim.Adam(self.parameters(), lr=opt.lr, weight_decay=opt.l2)
